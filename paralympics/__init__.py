@@ -14,7 +14,7 @@ def add_data_from_csv():
 
     from paralympics.model import Region, Event
 
-    #uf there is not rehions in the database, then add them 
+    #if there is not regions in the database, then add them 
     first_region = db.session.execute(db.select(Region)).first()
     if not first_region:
         print("Start adding region data to the database")
